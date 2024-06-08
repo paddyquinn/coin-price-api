@@ -1,0 +1,27 @@
+{
+  "name": "Coin Price API",
+  "private": true,
+  "version": "1.0.0",
+  "description": "API for Cryptocurrency Prices",
+  "engines": {
+    "npm": ">=10.0.0 <11.0.0",
+    "node": ">=20.0.0 <21.0.0"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "rm -rf ./dist && ./node_modules/.bin/tsc",
+    "migrate": "npx prisma migrate dev"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "prettier": "^3.3.1",
+    "prisma": "^5.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.15.0",
+    "express": "^4.19.2"
+  }
+}
