@@ -10,7 +10,7 @@
 ## Migrate DB
 `npm run migrate`
 
-## Build App + Cron Jobn
+## Build App + Cron Job
 `npm run build`
 
 ## Run App
