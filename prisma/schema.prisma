@@ -15,6 +15,7 @@ datasource db {
 
 model Coin {
   id        Int      @id @default(autoincrement())
+  cmc_id    Int      @unique
   name      String
   symbol    String
   timestamp DateTime
