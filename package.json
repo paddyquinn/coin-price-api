@@ -8,9 +8,11 @@
     "node": ">=20.0.0 <21.0.0"
   },
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/app/index.js",
+    "startCron": "node dist/cron/index.js",
     "build": "rm -rf ./dist && ./node_modules/.bin/tsc",
-    "migrate": "npx prisma migrate dev"
+    "migrate": "npx prisma migrate dev",
+    "reset-db": "npx prisma migrate reset"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
@@ -22,6 +24,9 @@
   },
   "dependencies": {
     "@prisma/client": "^5.15.0",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "fp-ts": "^2.16.6",
+    "io-ts": "^2.2.21",
+    "io-ts-types": "^0.5.19"
   }
 }
