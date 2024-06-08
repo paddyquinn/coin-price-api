@@ -20,4 +20,9 @@ model Coin {
   symbol    String
   timestamp DateTime
   price     Decimal  @db.Decimal(20, 10)
+
+  @@index([name])
+  @@index([symbol])
+  @@index([timestamp])
+  @@index([price])
 }
